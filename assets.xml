@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.25" GSCVersion="1.25.6227">
+  <sounds />
+  <images>
+    <image name="ground_small">
+      <file name="ground_small.png" size="68828" />
+    </image>
+    <image name="tree">
+      <file name="tree.png" size="157279" />
+    </image>
+    <image name="background_far">
+      <file name="background_far.png" size="216187" />
+    </image>
+    <image name="shrubb">
+      <file name="shrubb.png" size="57982" />
+    </image>
+    <image name="background_mid">
+      <file name="background_mid.png" size="100577" />
+    </image>
+    <image name="w1">
+      <file name="w1.png" size="92809" />
+    </image>
+    <image name="w2">
+      <file name="w2.png" size="85778" />
+    </image>
+    <image name="w3">
+      <file name="w3.png" size="81013" />
+    </image>
+    <image name="w4">
+      <file name="w4.png" size="85802" />
+    </image>
+    <image name="ground2_small">
+      <file name="ground2_small.png" size="67355" />
+    </image>
+    <image name="tree2">
+      <file name="tree2.png" size="74620" />
+    </image>
+    <image name="background2_far">
+      <file name="background2_far.png" size="170179" />
+    </image>
+    <image name="prize">
+      <file name="prize.png" size="63835" />
+    </image>
+    <image name="tap_coin_logo_90x90">
+      <file name="tap_coin_logo_90x90.png" size="6040" />
+    </image>
+    <image name="explosion_1">
+      <file name="explosion_1.png" size="81908" />
+    </image>
+    <image name="gold_button">
+      <file name="gold_button.png" size="63031" />
+    </image>
+    <image name="silver_button">
+      <file name="silver_button.png" size="64419" />
+    </image>
+    <image name="game_name">
+      <file name="game_name.png" size="85726" />
+    </image>
+    <image name="villian_stand">
+      <file name="villian_stand.png" size="118839" />
+    </image>
+    <image name="w1_b">
+      <file name="w1_b.png" size="82168" />
+    </image>
+    <image name="w2_b">
+      <file name="w2_b.png" size="71207" />
+    </image>
+    <image name="w3_b">
+      <file name="w3_b.png" size="71144" />
+    </image>
+    <image name="w4_b">
+      <file name="w4_b.png" size="72397" />
+    </image>
+    <image name="w1_badguy">
+      <file name="w1_badguy.png" size="106746" />
+    </image>
+    <image name="speech_box">
+      <file name="speech_box.png" size="52311" />
+    </image>
+    <image name="w1_badguy_left">
+      <file name="w1_badguy_left.png" size="117175" />
+    </image>
+    <image name="p1_wiggle">
+      <file name="p1_wiggle.png" size="74300" />
+    </image>
+    <image name="p2_wiggle">
+      <file name="p2_wiggle.png" size="73867" />
+    </image>
+    <image name="p3_wiggle">
+      <file name="p3_wiggle.png" size="85544" />
+    </image>
+    <image name="p4_wiggle">
+      <file name="p4_wiggle.png" size="81030" />
+    </image>
+    <image name="explosion_2">
+      <file name="explosion_2.png" size="126615" />
+    </image>
+    <image name="explosion_3">
+      <file name="explosion_3.png" size="99070" />
+    </image>
+    <image name="explosion_4">
+      <file name="explosion_4.png" size="54946" />
+    </image>
+    <image name="explosion_5">
+      <file name="explosion_5.png" size="52439" />
+    </image>
+    <image name="explosion_6">
+      <file name="explosion_6.png" size="47625" />
+    </image>
+    <image name="sword_hero_down">
+      <file name="sword_hero_down.png" size="59482" />
+    </image>
+    <image name="fireball_down">
+      <file name="fireball_down.png" size="69903" />
+    </image>
+    <image name="w2_badguy_left">
+      <file name="w2_badguy_left.png" size="108318" />
+    </image>
+    <image name="w3_badguy_left">
+      <file name="w3_badguy_left.png" size="105134" />
+    </image>
+    <image name="w4_badguy_left">
+      <file name="w4_badguy_left.png" size="111297" />
+    </image>
+    <image name="w1_badguy_run">
+      <file name="w1_badguy_run.png" size="114778" />
+    </image>
+    <image name="w2_badguy_run">
+      <file name="w2_badguy_run.png" size="117282" />
+    </image>
+    <image name="w3_badguy_run">
+      <file name="w3_badguy_run.png" size="116928" />
+    </image>
+    <image name="buttonLeft">
+      <file name="buttonLeft.png" size="86419" />
+    </image>
+    <image name="buttonRight">
+      <file name="buttonRight.png" size="86076" />
+    </image>
+    <image name="buttonUp">
+      <file name="buttonUp.png" size="86119" />
+    </image>
+    <image name="fireball_forward">
+      <file name="fireball_forward.png" size="68042" />
+    </image>
+    <image name="buttonFirePower">
+      <file name="buttonFirePower.png" size="86884" />
+    </image>
+    <image name="a1">
+      <file name="a1.png" size="87581" />
+    </image>
+    <image name="a2">
+      <file name="a2.png" size="87171" />
+    </image>
+    <image name="a3">
+      <file name="a3.png" size="100780" />
+    </image>
+    <image name="a4">
+      <file name="a4.png" size="94863" />
+    </image>
+    <image name="a5">
+      <file name="a5.png" size="86351" />
+    </image>
+    <image name="coin">
+      <file name="coin.png" size="56980" />
+    </image>
+    <image name="enemy_fireball_forward">
+      <file name="enemy_fireball_forward.png" size="71693" />
+    </image>
+  </images>
+  <fonts />
+  <behaviors />
+</assets>
