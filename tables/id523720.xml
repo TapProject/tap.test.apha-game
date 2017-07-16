@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table version="1.000000" name="Intro Speech" numRows="6" numCols="1" flags="9" tableType="0">
+<rows>
+<row id="0" name=""/>
+<row id="1" name=""/>
+<row id="2" name=""/>
+<row id="3" name=""/>
+<row id="4" name=""/>
+<row id="5" name=""/>
+</rows>
+<columns>
+<column id="0" name="" type="1" readonly="0">Master: And make sure that it doesn&apos;t escape again.,Guards: Yes sir\, we&apos;ll get it right this time ,Hero: ...,Guards: Hey you! Get lost\, nothing for you here,Master: And get rid of the funny looking one while your at it.,Hero: ...!</column>
+</columns>
+</table>
+
