@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id244965" PGFVersion="0.25" GSCVersion="1.25.6227">
+  <attributes>
+    <text id="name">Actor 8</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">130</real>
+      <real id="height">124</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">w1</image>
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id835670" class="ControlCameraBehavior" enabled="true">
+      <attributes>
+        <text id="name">Control Camera</text>
+        <text id="bundleName">ControlCamera.behavior</text>
+      </attributes>
+    </behavior>
+    <behavior id="id628833" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Keyboard Controls</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id480893" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Move Left</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id924169" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">left</text>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id822854" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="RHS">true</text>
+              </attributes>
+            </behavior>
+            <behavior id="id242980" class="AnimateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Animate</text>
+                <text id="bundleName">Animate.behavior</text>
+                <text id="images">w1	w2	w3	w4</text>
+                <index id="speed">10</index>
+                <boolean id="loop">true</boolean>
+                <boolean id="restoreActorImage">true</boolean>
+                <text id="currentFrameAttribute" />
+              </attributes>
+            </behavior>
+            <behavior id="id117185" class="AccelerateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Accelerate</text>
+                <text id="bundleName">Accelerate.behavior</text>
+                <angle id="direction">180</angle>
+                <index id="space">0</index>
+                <real id="acceleration">650</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id754373" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Move Right</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id228101" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">right</text>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id358143" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+            <behavior id="id835931" class="AnimateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Animate</text>
+                <text id="bundleName">Animate.behavior</text>
+                <text id="images">w1	w2	w3	w4</text>
+                <index id="speed">10</index>
+                <boolean id="loop">true</boolean>
+                <boolean id="restoreActorImage">true</boolean>
+                <text id="currentFrameAttribute" />
+              </attributes>
+            </behavior>
+            <behavior id="id444321" class="AccelerateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Accelerate</text>
+                <text id="bundleName">Accelerate.behavior</text>
+                <angle id="direction">0</angle>
+                <index id="space">0</index>
+                <real id="acceleration">650</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id821997" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Jumping</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id151071" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">space</text>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id123283" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.id862352</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id813003" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.id862352</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+            <behavior id="id598595" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">2</index>
+                <real id="interval">0.1</real>
+                <boolean id="runToCompletion">true</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id292542" class="AccelerateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Accelerate</text>
+                    <text id="bundleName">Accelerate.behavior</text>
+                    <angle id="direction">90</angle>
+                    <index id="space">0</index>
+                    <real id="acceleration">5000</real>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id357628" class="CollideBehavior" enabled="true">
+      <attributes>
+        <text id="name">Collide</text>
+        <text id="bundleName">Collide.behavior</text>
+        <text id="prototypeKey">id819534</text>
+        <text id="actorTag">Platforms</text>
+        <index id="mode">1</index>
+      </attributes>
+    </behavior>
+    <behavior id="id139953" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id403101" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey" />
+              <text id="actorTag">Platforms</text>
+              <real id="mode">1</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id451579" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.aspects.motion.attributes.linearVelocity.y</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">&lt;</text>
+              <real id="RHS">1</real>
+            </attributes>
+          </predicate>
+        </condition>
+        <condition id="id454110" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.aspects.motion.attributes.linearVelocity.y</text>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="number">
+            <attributes>
+              <text id="operator">&gt;</text>
+              <real id="RHS">-1</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id677048" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id862352</text>
+            <text id="RHS">1</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id339153" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Touch Group</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id455005" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Move Left</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id132670" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id344481</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id372870" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="RHS">true</text>
+              </attributes>
+            </behavior>
+            <behavior id="id484602" class="AnimateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Animate</text>
+                <text id="bundleName">Animate.behavior</text>
+                <text id="images">w1	w2	w3	w4</text>
+                <index id="speed">10</index>
+                <boolean id="loop">true</boolean>
+                <boolean id="restoreActorImage">true</boolean>
+                <text id="currentFrameAttribute" />
+              </attributes>
+            </behavior>
+            <behavior id="id386315" class="AccelerateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Accelerate</text>
+                <text id="bundleName">Accelerate.behavior</text>
+                <angle id="direction">180</angle>
+                <index id="space">0</index>
+                <real id="acceleration">650</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id655835" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Move Right</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id391947" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id651203</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id798548" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="RHS">false</text>
+              </attributes>
+            </behavior>
+            <behavior id="id917873" class="AnimateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Animate</text>
+                <text id="bundleName">Animate.behavior</text>
+                <text id="images">w1	w2	w3	w4</text>
+                <index id="speed">10</index>
+                <boolean id="loop">true</boolean>
+                <boolean id="restoreActorImage">true</boolean>
+                <text id="currentFrameAttribute" />
+              </attributes>
+            </behavior>
+            <behavior id="id855922" class="AccelerateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Accelerate</text>
+                <text id="bundleName">Accelerate.behavior</text>
+                <angle id="direction">0</angle>
+                <index id="space">0</index>
+                <real id="acceleration">650</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id120024" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Jumping</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id862501" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id573518</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id349612" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.id862352</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id219483" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.id862352</text>
+                <text id="RHS">0</text>
+              </attributes>
+            </behavior>
+            <behavior id="id141316" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">2</index>
+                <real id="interval">0.1</real>
+                <boolean id="runToCompletion">true</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id737054" class="AccelerateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Accelerate</text>
+                    <text id="bundleName">Accelerate.behavior</text>
+                    <angle id="direction">90</angle>
+                    <index id="space">0</index>
+                    <real id="acceleration">5000</real>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id533587" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">keyboard - FIre Power</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id444137" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - shoot left</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id938618" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id554062</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id657874" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">a</text>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id332465" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id964822" class="SpawnAction" enabled="true">
+              <attributes>
+                <text id="name">Spawn Actor</text>
+                <text id="bundleName">Spawn.behavior</text>
+                <text id="prototypeKey">id997777</text>
+                <angle id="direction">180</angle>
+                <index id="directionSpace">0</index>
+                <real id="x">-100</real>
+                <real id="y">0</real>
+                <index id="positionSpace">0</index>
+                <index id="layerOrder">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id164648" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - shoot right</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id481433" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id554062</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id891662" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">d</text>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id477577" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">0</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id862326" class="SpawnAction" enabled="true">
+              <attributes>
+                <text id="name">Spawn Actor</text>
+                <text id="bundleName">Spawn.behavior</text>
+                <text id="prototypeKey">id997777</text>
+                <angle id="direction">0</angle>
+                <index id="directionSpace">0</index>
+                <real id="x">100</real>
+                <real id="y">0</real>
+                <index id="positionSpace">0</index>
+                <index id="layerOrder">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id273809" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Touch -  Fire Power</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id662926" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - shoot left</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id109991" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id554062</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id677160" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id176990" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id542812</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id154986" class="SpawnAction" enabled="true">
+              <attributes>
+                <text id="name">Spawn Actor</text>
+                <text id="bundleName">Spawn.behavior</text>
+                <text id="prototypeKey">id997777</text>
+                <angle id="direction">180</angle>
+                <index id="directionSpace">0</index>
+                <real id="x">-25</real>
+                <real id="y">0</real>
+                <index id="positionSpace">0</index>
+                <index id="layerOrder">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id477137" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - shoot right</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id283816" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id554062</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id640086" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">0</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id587014" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id542812</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id830179" class="SpawnAction" enabled="true">
+              <attributes>
+                <text id="name">Spawn Actor</text>
+                <text id="bundleName">Spawn.behavior</text>
+                <text id="prototypeKey">id997777</text>
+                <angle id="direction">0</angle>
+                <index id="directionSpace">0</index>
+                <real id="x">25</real>
+                <real id="y">0</real>
+                <index id="positionSpace">0</index>
+                <index id="layerOrder">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id142952" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Keyboard - Melee</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id944217" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Melee Left</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id464928" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">a</text>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id876120" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id932153" class="AnimateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Animate</text>
+                <text id="bundleName">Animate.behavior</text>
+                <text id="images">a3	a4</text>
+                <index id="speed">10</index>
+                <boolean id="loop">true</boolean>
+                <boolean id="restoreActorImage">true</boolean>
+                <text id="currentFrameAttribute" />
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id701872" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule melee right</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id815398" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="key">
+                <attributes>
+                  <text id="mode">down</text>
+                  <text id="keyString">d</text>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id199117" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">0</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id411695" class="AnimateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Animate</text>
+                <text id="bundleName">Animate.behavior</text>
+                <text id="images">a3	a4</text>
+                <index id="speed">10</index>
+                <boolean id="loop">true</boolean>
+                <boolean id="restoreActorImage">true</boolean>
+                <text id="currentFrameAttribute" />
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id839542" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Touch - Melee</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id575950" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Melee Left</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id802773" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id104529" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id542812</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id960226" class="AnimateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Animate</text>
+                <text id="bundleName">Animate.behavior</text>
+                <text id="images">a3	a4	a5</text>
+                <index id="speed">5</index>
+                <boolean id="loop">false</boolean>
+                <boolean id="restoreActorImage">true</boolean>
+                <text id="currentFrameAttribute" />
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id258279" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule melee right</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id516806" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">0</index>
+                </attributes>
+              </predicate>
+            </condition>
+            <condition id="id878118" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id542812</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="boolean">
+                <attributes>
+                  <index id="RHS">1</index>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id136602" class="AnimateBehavior" enabled="true">
+              <attributes>
+                <text id="name">Animate</text>
+                <text id="bundleName">Animate.behavior</text>
+                <text id="images">a3	a4	a5</text>
+                <index id="speed">5</index>
+                <boolean id="loop">false</boolean>
+                <boolean id="restoreActorImage">true</boolean>
+                <text id="currentFrameAttribute" />
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id244654" class="ConstrainAttributeBehavior" enabled="true">
+      <attributes>
+        <text id="name">Constrain Attribute</text>
+        <text id="bundleName">ConstrainAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id532824</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="self.attributes.position.x" />
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior id="id941476" class="ConstrainAttributeBehavior" enabled="true">
+      <attributes>
+        <text id="name">Constrain Attribute</text>
+        <text id="bundleName">ConstrainAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id993581</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="self.attributes.position.y" />
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior id="id629644" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Group - Health</text>
+        <text id="bundleName">Group.behavior</text>
+        <boolean id="runOnce">false</boolean>
+        <boolean id="runSequentially">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id105278" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id163790</text>
+            <angle id="direction">0</angle>
+            <index id="directionSpace">0</index>
+            <real id="x">0</real>
+            <real id="y">0</real>
+            <index id="positionSpace">0</index>
+            <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id923427" class="SpawnAction" enabled="true">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id543421</text>
+            <angle id="direction">0</angle>
+            <index id="directionSpace">0</index>
+            <real id="x">0</real>
+            <real id="y">0</real>
+            <index id="positionSpace">0</index>
+            <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+        <behavior id="id680787" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id936641</text>
+            <text id="RHS">100</text>
+          </attributes>
+        </behavior>
+        <behavior id="id266028" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - No Health</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id888577" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id936641</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&lt;</text>
+                  <real id="RHS">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id360688" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id290871</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="game.attributes.id290871" />
+                    <string xml:space="preserve">-1</string>
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id572785" class="ResetSceneAction" enabled="true">
+              <attributes>
+                <text id="name">Reset Scene</text>
+                <text id="bundleName">ResetScene.behavior</text>
+                <index id="enableAdvertisement">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id246857" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Cracks &amp; hole</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id394730" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.position.y</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&lt;</text>
+                  <real id="RHS">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id593125" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">0</index>
+                <real id="interval">1</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id181753" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id290871</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id290871" />
+                        <string xml:space="preserve">-1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id710249" class="ResetSceneAction" enabled="true">
+                  <attributes>
+                    <text id="name">Reset Scene</text>
+                    <text id="bundleName">ResetScene.behavior</text>
+                    <index id="enableAdvertisement">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id160468" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - collide with enemy</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id627445" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+              <attributes>
+                <text id="name">default name</text>
+                <index id="conditionType">0</index>
+              </attributes>
+              <predicate type="collision">
+                <attributes>
+                  <text id="prototypeKey">id549222</text>
+                  <text id="actorTag" />
+                  <real id="mode">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id890437" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id936641</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="game.attributes.id936641" />
+                    <string xml:space="preserve">-51</string>
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+        <behavior id="id983035" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule - Game Over!</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id296454" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id290871</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id823827" class="ChangeSceneAction" enabled="true">
+              <attributes>
+                <text id="name">Change Scene</text>
+                <text id="bundleName">ChangeScene.behavior</text>
+                <text id="sceneKey">id769815</text>
+                <index id="enableAdvertisement">0</index>
+                <index id="index">1</index>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id245799" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule - collect coins</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id967238" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id398370</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id573515" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id953243</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id953243" />
+                <string xml:space="preserve"> + 10</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id332900" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id670979</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id670979" />
+                <string xml:space="preserve">+1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id310670" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule - Ouch</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id529160" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id494123</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id166524" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id936641</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id936641" />
+                <string xml:space="preserve">-50</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">130</integer>
+        <integer id="tileHeight">124</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <point id="centerOfMass">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+        <boolean id="pin">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+        <boolean id="canSleep">true</boolean>
+        <boolean id="betterColisions">false</boolean>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id645546" PGFVersion="0.25" GSCVersion="1.25.6227">
+  <attributes>
+    <text id="name">logo</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">90</real>
+      <real id="height">90</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">tap_coin_logo_90x90</image>
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id469091" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Timer</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">1</index>
+        <real id="interval">1</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id989577" class="MoveToBehavior" enabled="true">
+          <attributes>
+            <text id="name">Move To</text>
+            <text id="bundleName">MoveTo.behavior</text>
+            <boolean id="runToCompletion">false</boolean>
+            <point id="position">
+              <real id="x">
+                <expression>
+                  <reference keypath="game.attributes.displaySize.width" />
+                  <string xml:space="preserve"> /2 - 100</string>
+                </expression>
+              </real>
+              <real id="y">
+                <expression>
+                  <reference keypath="game.attributes.displaySize.height" />
+                  <string xml:space="preserve"> /2</string>
+                </expression>
+              </real>
+            </point>
+            <index id="space">1</index>
+            <real id="speed">100</real>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id864933" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Timer</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">1</index>
+        <real id="interval">5</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id329579" class="DisplayTextBehavior" enabled="true">
+          <attributes>
+            <text id="name">Display Text</text>
+            <text id="bundleName">DisplayText.behavior</text>
+            <text id="text">The Tap Project</text>
+            <text id="font">Cambay</text>
+            <real id="size">20</real>
+            <index id="alignment">1</index>
+            <boolean id="wrap">false</boolean>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">1</real>
+            </color>
+            <real id="offsetx">150</real>
+            <real id="offsety">-1</real>
+            <index id="space">0</index>
+            <index id="directionSpace">0</index>
+            <angle id="direction">0</angle>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">90</integer>
+        <integer id="tileHeight">90</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <point id="centerOfMass">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+        <boolean id="pin">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+        <boolean id="canSleep">true</boolean>
+        <boolean id="betterColisions">false</boolean>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>
