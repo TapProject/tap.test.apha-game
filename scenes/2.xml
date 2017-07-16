@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene PGFVersion="0.25" GSCVersion="1.25.6227" id="id799655">
+  <layers>
+    <layer id="id919103">
+      <actors>
+        <actor id="id548576" prototype="id443940">
+          <attributes>
+            <point id="position">
+              <real id="x">848</real>
+              <real id="y">476</real>
+            </point>
+            <size id="size">
+              <real id="width">1698</real>
+              <real id="height">878</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">Actor 7 Copy 1</text>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id755035" prototype="id269180">
+          <attributes>
+            <point id="position">
+              <real id="x">855</real>
+              <real id="y">251</real>
+            </point>
+            <size id="size">
+              <real id="width">1698</real>
+              <real id="height">547</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">Actor 6 Copy 1</text>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id323721" prototype="id476581">
+          <attributes>
+            <point id="position">
+              <real id="x">474</real>
+              <real id="y">871</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">130</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id905097" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">30</real>
+                <boolean id="runToCompletion">true</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id211898" class="MoveToBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move To</text>
+                    <text id="bundleName">MoveTo.behavior</text>
+                    <boolean id="runToCompletion">false</boolean>
+                    <point id="position">
+                      <real id="x">386</real>
+                      <real id="y">87</real>
+                    </point>
+                    <index id="space">1</index>
+                    <real id="speed">500</real>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id259589" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">34</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id477532" class="DestroyAction" enabled="true">
+                  <attributes>
+                    <text id="name">Destroy</text>
+                    <text id="bundleName">Destroy.behavior</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+        <actor id="id432252" prototype="id604755">
+          <attributes>
+            <point id="position">
+              <real id="x">125</real>
+              <real id="y">78</real>
+            </point>
+            <size id="size">
+              <real id="width">102.333333333333</real>
+              <real id="height">71.6666666666666</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">Actor 5 Copy 6</text>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id221543" prototype="id604755">
+          <attributes>
+            <point id="position">
+              <real id="x">386</real>
+              <real id="y">87</real>
+            </point>
+            <size id="size">
+              <real id="width">123</real>
+              <real id="height">90.9999999999999</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">Actor 5 Copy 7</text>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id533872" prototype="id604755">
+          <attributes>
+            <point id="position">
+              <real id="x">714</real>
+              <real id="y">75</real>
+            </point>
+            <size id="size">
+              <real id="width">88.3333333333335</real>
+              <real id="height">65.6666666666665</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">Actor 5 Copy 8</text>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id442124" prototype="id604755">
+          <attributes>
+            <point id="position">
+              <real id="x">932</real>
+              <real id="y">73</real>
+            </point>
+            <size id="size">
+              <real id="width">88.3333333333335</real>
+              <real id="height">65.6666666666665</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">Actor 5 Copy 9</text>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id981021" prototype="id819534">
+          <attributes>
+            <point id="position">
+              <real id="x">835</real>
+              <real id="y">22</real>
+            </point>
+            <size id="size">
+              <real id="width">1674</real>
+              <real id="height">42</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">Actor 2 Copy 1</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <enumeration id="horizontalWrap">2</enumeration>
+              </attributes>
+            </graphics>
+            <physics>
+              <attributes>
+                <boolean id="canSleep">true</boolean>
+                <boolean id="betterColisions">false</boolean>
+              </attributes>
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id298606" prototype="id165597">
+          <attributes>
+            <point id="position">
+              <real id="x">64</real>
+              <real id="y">98</real>
+            </point>
+            <size id="size">
+              <real id="width">130</real>
+              <real id="height">124</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id571985" class="ControlCameraBehavior" enabled="true">
+              <attributes>
+                <text id="name">Control Camera</text>
+                <text id="bundleName">ControlCamera.behavior</text>
+              </attributes>
+            </behavior>
+            <behavior id="id450029" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">2</index>
+                <real id="interval">4</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id134790" class="MoveBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move</text>
+                    <text id="bundleName">Move.behavior</text>
+                    <angle id="direction">0</angle>
+                    <index id="space">0</index>
+                    <index id="moveType">0</index>
+                    <real id="speed">50</real>
+                  </attributes>
+                </behavior>
+                <behavior id="id479768" class="AnimateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Animate</text>
+                    <text id="bundleName">Animate.behavior</text>
+                    <text id="images">w1_b	w2_b	w3_b	w4_b</text>
+                    <index id="speed">8</index>
+                    <boolean id="loop">true</boolean>
+                    <boolean id="restoreActorImage">true</boolean>
+                    <text id="currentFrameAttribute" />
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id927710" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">33</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id934696" class="TimerBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">2</index>
+                    <real id="interval">1.3</real>
+                    <boolean id="runToCompletion">false</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior id="id908318" class="MoveBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Move</text>
+                        <text id="bundleName">Move.behavior</text>
+                        <angle id="direction">0</angle>
+                        <index id="space">0</index>
+                        <index id="moveType">0</index>
+                        <real id="speed">100</real>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id549802" class="AnimateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Animate</text>
+                        <text id="bundleName">Animate.behavior</text>
+                        <text id="images">w1_b	w2_b	w3_b	w4_b</text>
+                        <index id="speed">20</index>
+                        <boolean id="loop">true</boolean>
+                        <boolean id="restoreActorImage">true</boolean>
+                        <text id="currentFrameAttribute" />
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id105646" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">34</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id167972" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">w1</image>
+                  </attributes>
+                </behavior>
+                <behavior id="id330704" class="MoveBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move</text>
+                    <text id="bundleName">Move.behavior</text>
+                    <angle id="direction">0</angle>
+                    <index id="space">0</index>
+                    <index id="moveType">0</index>
+                    <real id="speed">300</real>
+                  </attributes>
+                </behavior>
+                <behavior id="id636496" class="AnimateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Animate</text>
+                    <text id="bundleName">Animate.behavior</text>
+                    <text id="images">w1	w2	w3	w4</text>
+                    <index id="speed">22</index>
+                    <boolean id="loop">true</boolean>
+                    <boolean id="restoreActorImage">true</boolean>
+                    <text id="currentFrameAttribute" />
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id786490" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">37</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id210696" class="ChangeSceneAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Scene</text>
+                    <text id="bundleName">ChangeScene.behavior</text>
+                    <text id="sceneKey">id553541</text>
+                    <index id="enableAdvertisement">0</index>
+                    <index id="index">1</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+        <actor id="id742866" prototype="id608605">
+          <attributes>
+            <point id="position">
+              <real id="x">953</real>
+              <real id="y">123</real>
+            </point>
+            <size id="size">
+              <real id="width">135</real>
+              <real id="height">159.666666666667</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id219903" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">22</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id932072" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">explosion_1</image>
+                  </attributes>
+                </behavior>
+                <behavior id="id457943" class="AnimateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Animate</text>
+                    <text id="bundleName">Animate.behavior</text>
+                    <text id="images">explosion_1	explosion_2	explosion_3	explosion_4	explosion_5	explosion_6</text>
+                    <index id="speed">15</index>
+                    <boolean id="loop">false</boolean>
+                    <boolean id="restoreActorImage">false</boolean>
+                    <text id="currentFrameAttribute" />
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+        <actor id="id816570" prototype="id859122">
+          <attributes>
+            <point id="position">
+              <real id="x">837</real>
+              <real id="y">76</real>
+            </point>
+            <size id="size">
+              <real id="width">69.6666666666667</real>
+              <real id="height">67.6666666666667</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id343332" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">2</index>
+                <real id="interval">10</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id685745" class="AnimateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Animate</text>
+                    <text id="bundleName">Animate.behavior</text>
+                    <text id="images">p1_wiggle	p2_wiggle	p3_wiggle	p4_wiggle</text>
+                    <index id="speed">10</index>
+                    <boolean id="loop">true</boolean>
+                    <boolean id="restoreActorImage">true</boolean>
+                    <text id="currentFrameAttribute" />
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id515014" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">22</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id407333" class="AnimateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Animate</text>
+                    <text id="bundleName">Animate.behavior</text>
+                    <text id="images">explosion_1	explosion_2	explosion_3	explosion_4	explosion_5	explosion_6</text>
+                    <index id="speed">15</index>
+                    <boolean id="loop">false</boolean>
+                    <boolean id="restoreActorImage">false</boolean>
+                    <text id="currentFrameAttribute" />
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+        <actor id="id129682" prototype="id535796">
+          <attributes>
+            <point id="position">
+              <real id="x">774</real>
+              <real id="y">101</real>
+            </point>
+            <size id="size">
+              <real id="width">130</real>
+              <real id="height">128</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id364699" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">23</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id211697" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">w1_badguy_left</image>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id538842" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">32</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id818139" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">w1_badguy</image>
+                  </attributes>
+                </behavior>
+                <behavior id="id995331" class="AnimateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Animate</text>
+                    <text id="bundleName">Animate.behavior</text>
+                    <text id="images">w1_badguy_run	w2_badguy_run	w3_badguy_run</text>
+                    <index id="speed">20</index>
+                    <boolean id="loop">true</boolean>
+                    <boolean id="restoreActorImage">true</boolean>
+                    <text id="currentFrameAttribute" />
+                  </attributes>
+                </behavior>
+                <behavior id="id870676" class="MoveBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move</text>
+                    <text id="bundleName">Move.behavior</text>
+                    <angle id="direction">0</angle>
+                    <index id="space">0</index>
+                    <index id="moveType">0</index>
+                    <real id="speed">200</real>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+        <actor id="id398310" prototype="id535796">
+          <attributes>
+            <point id="position">
+              <real id="x">717</real>
+              <real id="y">101</real>
+            </point>
+            <size id="size">
+              <real id="width">130</real>
+              <real id="height">128</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">Actor 20 Copy 1</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id140622" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">14</real>
+                <boolean id="runToCompletion">true</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id182725" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">w1_badguy_left</image>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id459202" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">17</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id634910" class="MoveBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move</text>
+                    <text id="bundleName">Move.behavior</text>
+                    <angle id="direction">184.0856</angle>
+                    <index id="space">0</index>
+                    <index id="moveType">0</index>
+                    <real id="speed">20</real>
+                  </attributes>
+                </behavior>
+                <behavior id="id425900" class="AnimateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Animate</text>
+                    <text id="bundleName">Animate.behavior</text>
+                    <text id="images">w1_badguy_left	w2_badguy_left	w3_badguy_left	w4_badguy_left</text>
+                    <index id="speed">10</index>
+                    <boolean id="loop">true</boolean>
+                    <boolean id="restoreActorImage">true</boolean>
+                    <text id="currentFrameAttribute" />
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id745507" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id328652" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="collision">
+                    <attributes>
+                      <text id="prototypeKey">id680983</text>
+                      <text id="actorTag" />
+                      <real id="mode">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id168184" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">explosion_2</image>
+                  </attributes>
+                </behavior>
+                <behavior id="id756132" class="AnimateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Animate</text>
+                    <text id="bundleName">Animate.behavior</text>
+                    <text id="images">explosion_2	explosion_3	explosion_4	explosion_5	explosion_6</text>
+                    <index id="speed">10</index>
+                    <boolean id="loop">false</boolean>
+                    <boolean id="restoreActorImage">false</boolean>
+                    <text id="currentFrameAttribute" />
+                  </attributes>
+                </behavior>
+                <behavior id="id253503" class="DestroyAction" enabled="true">
+                  <attributes>
+                    <text id="name">Destroy</text>
+                    <text id="bundleName">Destroy.behavior</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+        <actor id="id365782" prototype="id591820">
+          <attributes>
+            <point id="position">
+              <real id="x">517</real>
+              <real id="y">570</real>
+            </point>
+            <size id="size">
+              <real id="width">632.333333333333</real>
+              <real id="height">125</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">0.75</real>
+            </color>
+          </attributes>
+          <behaviors>
+            <behavior id="id758369" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">scene.attributes.id576978</text>
+                <text id="RHS">
+                  <expression>
+                    <string xml:space="preserve">tableCellValue(</string>
+                    <reference keypath="game.attributes.id523720" />
+                    <string xml:space="preserve">, </string>
+                    <reference keypath="scene.attributes.id220273" />
+                    <string xml:space="preserve">, 1)</string>
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id915424" class="DisplayTextBehavior" enabled="true">
+              <attributes>
+                <text id="name">Display Text</text>
+                <text id="bundleName">DisplayText.behavior</text>
+                <text id="text">
+                  <expression>
+                    <reference keypath="scene.attributes.id576978" />
+                  </expression>
+                </text>
+                <text id="font">Cambay</text>
+                <real id="size">15</real>
+                <index id="alignment">1</index>
+                <boolean id="wrap">false</boolean>
+                <color id="color">
+                  <real id="red">1</real>
+                  <real id="green">1</real>
+                  <real id="blue">1</real>
+                  <real id="alpha">1</real>
+                </color>
+                <real id="offsetx">0</real>
+                <real id="offsety">0</real>
+                <index id="space">0</index>
+                <index id="directionSpace">0</index>
+                <angle id="direction">0</angle>
+              </attributes>
+            </behavior>
+            <behavior id="id141862" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">0</index>
+                <real id="interval">3</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id900429" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id576978</text>
+                    <text id="RHS">
+                      <expression>
+                        <string xml:space="preserve">tableCellValue(</string>
+                        <reference keypath="game.attributes.id523720" />
+                        <string xml:space="preserve">, </string>
+                        <reference keypath="scene.attributes.id220273" />
+                        <string xml:space="preserve">, 1)</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id576863" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id220273</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="scene.attributes.id220273" />
+                        <string xml:space="preserve"> +1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id681831" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">23</real>
+                <boolean id="runToCompletion">false</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id512726" class="DestroyAction" enabled="true">
+                  <attributes>
+                    <text id="name">Destroy</text>
+                    <text id="bundleName">Destroy.behavior</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+        <actor id="id315843" prototype="id680983">
+          <attributes>
+            <point id="position">
+              <real id="x">474</real>
+              <real id="y">867</real>
+            </point>
+            <size id="size">
+              <real id="width">112</real>
+              <real id="height">180</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id370344" class="TimerBehavior" enabled="true">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">30</real>
+                <boolean id="runToCompletion">true</boolean>
+              </attributes>
+              <behaviors>
+                <behavior id="id214256" class="MoveToBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move To</text>
+                    <text id="bundleName">MoveTo.behavior</text>
+                    <boolean id="runToCompletion">false</boolean>
+                    <point id="position">
+                      <real id="x">386</real>
+                      <real id="y">87</real>
+                    </point>
+                    <index id="space">1</index>
+                    <real id="speed">500</real>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id701368" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id821446" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="collision">
+                    <attributes>
+                      <text id="prototypeKey">id819534</text>
+                      <text id="actorTag" />
+                      <real id="mode">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id409406" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">explosion_1</image>
+                  </attributes>
+                </behavior>
+                <behavior id="id844097" class="AnimateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Animate</text>
+                    <text id="bundleName">Animate.behavior</text>
+                    <text id="images">explosion_1	explosion_2	explosion_3	explosion_4	explosion_5	explosion_6</text>
+                    <index id="speed">10</index>
+                    <boolean id="loop">false</boolean>
+                    <boolean id="restoreActorImage">false</boolean>
+                    <text id="currentFrameAttribute" />
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects />
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Background</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+  </layers>
+  <attributes>
+    <text id="name">Introduction</text>
+    <real id="time">0</real>
+    <size id="size">
+      <real id="width">2048</real>
+      <real id="height">968</real>
+    </size>
+    <boolean id="wrapX">false</boolean>
+    <boolean id="wrapY">false</boolean>
+    <point id="gravity">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <color id="color">
+      <real id="red">0</real>
+      <real id="green">0</real>
+      <real id="blue">0</real>
+      <real id="alpha">1</real>
+    </color>
+    <rect id="camera">
+      <point id="origin">
+        <real id="x">0</real>
+        <real id="y">0</real>
+      </point>
+      <size id="size">
+        <real id="width">1024</real>
+        <real id="height">768</real>
+      </size>
+      <size id="trackingArea">
+        <real id="width">229.366258493228</real>
+        <real id="height">723.852967544828</real>
+      </size>
+      <real id="rotation">0</real>
+    </rect>
+    <attributes id="autorotate">
+      <boolean id="landscapeLeft">true</boolean>
+      <boolean id="portrait">false</boolean>
+      <boolean id="landscapeRight">false</boolean>
+      <boolean id="portraitUpsideDown">false</boolean>
+    </attributes>
+    <text id="id576978" name="CurrentSpeech" />
+    <integer id="id220273" name="CurrentRow">0</integer>
+  </attributes>
+</scene>
